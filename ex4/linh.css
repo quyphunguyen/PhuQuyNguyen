@@ -1,0 +1,30 @@
+#cha{
+	border: 1px solid black;
+	width: 60%;
+	height: 300px;
+	text-align: center;
+	position: relative;
+
+}
+.all{
+	width: 20%;
+	height: 200px;
+	border: 2px solid red;
+	position: absolute;
+}
+.top{
+	top: 5px;
+	left: 5px;
+	z-index: 999;
+	background-color: red;
+}
+.right{
+	right: 20%;
+	background-color: green;
+
+}
+.bottom{
+	bottom: 5px;
+	background-color: yellow;
+
+}

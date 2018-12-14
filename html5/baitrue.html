@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		.abc{
+			height: 200px;
+			width: 25%;
+			float: left;
+		}
+		.a{
+			background: red;
+		}
+		.b{
+			background:blue;
+		}
+		.c{
+			background: black;
+		}
+		.d{
+			background: yellow;
+		}
+		@media (min-width:800px ){
+			.abc{
+				width: 25%
+			}
+		}
+			
+		@media (min-width:500px ) and (max-width:799px){
+			.abc{
+				width: 50%
+			
+				}
+			}
+		@media (max-width:499px ){
+			.abc{
+				width: 100%
+			}
+		}
+	</style>
+</head>
+<body>
+			
+		<div class="abc a"></div>
+		<div class="abc b"></div>
+		<div class="abc c"></div>
+		<div class="abc d"></div>
+		
+		
+</body>
+</html>

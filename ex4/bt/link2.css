@@ -1,0 +1,118 @@
+.top{
+	width: 70%;
+	height: 150px;
+	
+}
+.all{
+	font-family: arial;
+}
+.p{
+	width: 500px;
+}
+ul{
+	list-style:none;
+}
+.li{
+	float: right;
+	padding: 10px;
+}
+.ul{
+	width: 400px;
+	height: 50px;
+	margin: 0px;
+	
+}
+.div{
+	float:left;
+	width: 50%;
+}
+.a{
+	float:right;
+
+}
+.h3{
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 35px;
+}
+.top1{
+	width: 70%;
+	height: 800px;
+}
+.div1{
+	width: 30%;
+	height: 800px;
+	float: left;
+}
+.li1{
+	margin-top: 20px;
+}
+.cha1{
+	width: 70%;
+	float: right;
+}
+.left{
+	    width: 30%;
+	    border: 1px solid #ecece0;
+    position: relative;
+    border-radius: 5px;
+    height: 250px;
+    float: left;
+    margin: 5px;
+    background-color: #ecece0;
+}
+img{
+	width: 100%;
+	height: 208px;
+	 border-radius: 0 0 5px 5px;
+}
+p{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: #a0a08d;
+	
+}
+h3{
+	margin:10px 0;
+}
+.cha2{
+	width: 80%;
+	height: 50px;
+}
+.h{
+	width: 15%;
+}
+.div2{
+width: 75%;
+display: inline-block;
+}
+.li2{
+	float: left;
+	display: inline-block;
+	margin: 10px;
+	color: blue;
+	text-decoration: underline;
+}
+.c{
+	float: left;
+}
+.li1:hover{
+	color: blue;
+}
+.li2:hover{
+	color: red;
+}
+.li:hover{
+
+	color: blue;
+}
+p:hover{
+	color: red;
+}
+h3:hover{
+	color: yellow;
+}

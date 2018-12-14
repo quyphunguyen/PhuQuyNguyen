@@ -1,0 +1,65 @@
+.top{
+	width: 100%;
+
+}
+.topcon{
+	width: 80%;
+	margin: 0 auto;
+}
+.topcon span{
+	color: #FF4000;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.align{
+	text-align: center;
+}
+.display{
+	display: inline-block;
+}
+ul{
+	list-style: none;
+}
+
+.ul1 li{
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.tintuc{
+	font-size: 30px;
+
+}
+.tintuc1-content{
+	width: 24%;
+	font-size: 20px;
+
+}
+.tintuc1 p{
+	    margin-top: 50px;
+	font-size: 23;px
+		
+}
+
+.center div{
+	float: left
+}
+.I{
+	height: 100px;
+	width: 100px;
+	font-size: 50px;
+	background: #FF4000;
+	border-radius: 50px;
+	color: #fff;
+}
+.tintuc2-content h3{
+	font-size: 30px;
+
+}
+.conten1{
+	margin-top: 50px;
+}

@@ -1,0 +1,101 @@
+li{
+	list-style:none;
+	float: left;
+	margin: 10px;
+	display: inline-block;
+
+}
+
+.li{
+	line-height: 124px;
+}
+.a{
+	float: right;
+}
+.b{
+	padding:0;
+	
+}
+.divc{
+	width: 32%;
+	float: left;
+	margin:0 5px;
+}
+.divc img{
+	width: 100%;
+
+}
+.divc h4{
+	margin: 0
+}
+h1{
+	color: blue;
+}
+h4{
+	color: blue
+}
+.contenr p{
+	margin: 0
+}
+.contenr h3{
+	color: red;
+}
+.contenr div{
+	float: left;
+	margin-left: 40px
+}
+.contenr1 h4{
+	margin: 0;
+}
+
+.fa-facebook-official:before {
+    content: "\f230";
+    font-size: 40px;
+}
+.fa-home:before {
+    content: "\f015";
+      font-size: 40px;
+}
+.fa-address-book-o:before {
+    content: "\f2ba";
+     font-size: 40px;
+}
+
+@media (min-width:700px ) and (max-width:900px){
+			.abc{
+				width: 50%;
+
+			}
+			.divc{
+				width: 48%;
+			}
+			.ab{
+				width: 40%;
+			}
+			.li{
+				display: none;
+			}
+			.abc div{
+				width: 40%;
+				
+			}
+
+	}
+@media (min-width:400px ) and (max-width:699px){
+			.abc{
+				width: 100%;
+
+			}
+			.divc{
+				width: 100%;
+			}
+			.ab{
+				width:90%;
+			}
+			.li{
+				display: none;
+			}
+			.li1{
+				margin: 0 auto;
+			}
+	}

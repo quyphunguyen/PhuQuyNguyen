@@ -1,0 +1,41 @@
+.cha{
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+.me{
+	width: 70%;
+	}
+p{
+	font-size: 30px;
+	text-align: left;
+	width: 200px;
+	height: 50px;
+	
+}
+.div{
+	    margin-left: 30px;
+	float: left;
+}
+.ul1{
+	list-style:none;
+	float: right;
+	padding-top: 20px;
+}
+.li{
+	float:left;
+	width: 70px;
+}
+.div2{
+	list-style:none;
+}
+.cha1{
+	float: left;
+	width: 40%;
+	 margin-top: 150px;
+    margin-left: -145px;
+}
+.li1{
+	margin-top: 10px;
+	margin-left: -35px;
+}
