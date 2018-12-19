@@ -1,14 +1,12 @@
 .top{
 	width: 100%;
-
 }
 .topcon{
 	width: 80%;
 	margin: 0 auto;
+	line-height: 50px;
 }
-.topcon span{
-	color: #FF4000;
-}
+
 .left{
 	float: left;
 }
@@ -21,13 +19,15 @@
 .display{
 	display: inline-block;
 }
+
 ul{
 	list-style: none;
 }
-
-.ul1 li{
-	margin: 0 10px;
-	display: inline-block;
+.ul1{
+	margin: 0 1.5%;
+}
+.red{
+	color: red;
 }
 
 .tintuc{
@@ -44,22 +44,159 @@ ul{
 	font-size: 23;px
 		
 }
+.tintuc1 i{
+	line-height: 80px;
+}
 
 .center div{
 	float: left
 }
 .I{
-	height: 100px;
-	width: 100px;
-	font-size: 50px;
+	height: 80px;
+	width: 80px;
+	font-size: 40px;
 	background: #FF4000;
-	border-radius: 50px;
+	border-radius: 40px;
 	color: #fff;
+}
+.tintuc2-content{
+	margin: 0 36%;
 }
 .tintuc2-content h3{
 	font-size: 30px;
 
 }
 .conten1{
-	margin-top: 50px;
+	margin-top: 100px;
+	    margin-bottom: 60px;
+
 }
+
+.divcon{
+    background: oldlace;
+    width: 150px;
+    border-radius: 30px;
+        height: 30px;
+    line-height: 0px;
+  	
+    
+
+}
+.ceo{
+	width: 80%;
+	 margin: 60px auto;
+}
+.ceo >div{
+	width: 23%;
+	margin: 0 5px;
+}
+.ceo p {
+	font-size: 15px;
+}
+.bottom{
+	background: #292929;
+	margin-top: 100px;
+	color:#fff;
+}
+.bottom p{
+	font-size: 15px;
+}
+.bottom1{
+	background: black;
+
+}
+
+.bottom ul{
+	margin: 0;
+    line-height: 57px;
+}
+.div1{
+	width: 90%;
+	margin: 0 auto
+}
+.div1 >div{
+	width: 30%;
+}
+.div2 {
+	width: 80%; margin: 0 auto;
+}
+.div2 >div{
+	width: 30%;
+	margin: 0 1%;
+}
+.div2 hr{
+	width: 100%;
+}
+.cong-cu{
+	background:#fd502e;
+	width: 100%;
+	margin: 0 auto 30px;
+}
+.cong-cu >div{
+	width: 60%;margin: 100px auto 100px;
+}
+.cong-cu span{
+	background:#fff;
+	margin: 1% -1%;
+	padding:10px;
+	border-radius: 20px;
+}
+.FURCHASE-NOW{
+	margin:0 -1% 0 27%;
+}
+.icon i{
+	font-size:30px;	
+}
+.the-i{
+	width: 40%;
+}
+.the-i i{
+	line-height: 80px
+}
+.the-i2{
+	width: 60%;
+}
+.img1{
+	width: 80%;margin: 0 auto;
+}
+.img1 img{
+	width: 50%;
+}
+
+
+@media (min-width:700px ) and (max-width:900px){
+			.ceo div{
+				width: 100%;
+			}
+			.div2 div{
+				width: 100%;
+			}
+			.div1 >div{
+				width: 100%;	
+			}
+	}
+	@media (max-width:699px){
+			.ceo div{
+				width: 100%;
+			}
+			.div2 div{
+				width: 100%;
+			}
+			.div1 >div{
+				width: 100%;	
+			}
+			.tintuc1-content{
+				width: 100%;
+			}
+			.ket{
+				width: 100% !important;
+			}
+	}
+	@media (max-width: 500px){
+			.ul1{
+				font-size: 15px;
+			}
+			.cong-cu span{
+				font-size: 10px;
+			}
+	}
