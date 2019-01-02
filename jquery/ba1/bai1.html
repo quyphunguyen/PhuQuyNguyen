@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+	<style type="text/css">
+		.body{
+			width: 50%;
+			margin: 0 auto;
+		}
+		.input{
+			line-height: 150px;
+			background-color:#f44336;
+		}
+			.text{
+			width: 78%;
+			height: 25px;
+			margin-left: 5px
+		}
+		.all{
+			width: 20%;line-height: 25px;
+		}
+		.work{
+			line-height: 40px;
+			margin-top: 0px;
+		}
+		.yes{
+			width: 30%;
+			margin-left: 10px;
+			display: none;
+			position:absolute;
+		}
+		.delete{
+			float: right;
+			line-height: 40px;
+			margin-right: 10px
+			;
+			position:absolute;
+
+
+		}
+		.content{
+			position:relative;
+			margin:0px;
+		}
+		.content:hover{
+			background: #888888;
+
+		}
+		.content:hover .yes{
+		display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="input">
+			<input type="text" name="" class="text">
+			<button class="all">all</button>
+		</div>
+		<p class="work"></p>
+		</div>
+
+
+	<script type="text/javascript">
+		$('.all').click(function(){
+			var text=$('.text').val();
+		 $('.work').append(`<p class="content"><i class="fas fa-check yes"></i>`+text+`<i class="fas fa-trash-alt delete"></i>`);
+		});
+		$(document).on('click','.delete',function(){
+ 			$(this).parent().remove();
+ 		});
+	</script>
+</body>
+
+</html>

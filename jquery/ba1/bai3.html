@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script type="text/javascript" src="../jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		.body{
+			width: 50%;
+			margin: 0 auto;
+			height: 500px;
+
+		}
+		h2{
+			text-align: center;
+		}
+		.magin{
+			margin: 0;
+		}
+		.minus{
+			display: none;
+		}
+		.content{
+			display: none;
+			width: 100%;
+			border: 1px solid black;
+
+		}
+		.left{
+			float: left;
+		}
+		.width {
+			width: 100%;
+			border: 1px solid black;
+			line-height: 40px;
+		}
+
+		.i{
+			font-size: 40px;
+			margin-left: -7px;
+			
+			
+		}
+		.span{
+			margin-left: 20px;
+		}
+		.color{
+			color: #9ce41e;
+		}
+		.color1{
+			background-color: #474747;
+		}
+		body{
+			background-color: black;
+			color: #ffff;
+		}
+	</style>
+</head>
+<body >
+	<div class="body">
+		<h2>
+Chào mừng năm 2019 👋👋👋</h2>
+		
+		<p class="width left magin color1" ><i class="fas fa-plus-square plus left i color" ></i><i class="fas fa-minus-square minus left i color"></i><span class="span">HAPPY NEW YEAR!!!🎆🎊🎇
+        i4</span></p>
+		<p class="content magin color1">Chúc tất cả mọi ng và ae bb ng thân 1 năm mới an khang - thịnh vượng, sức khỏe dồi rào😍- hạnh phúc😘, gặp nhiều may mắn😉 và gặt hái đc nhiều thành công trong c/s😜, mong mọi điều tốt đẹp nhất sẽ đến vs tất cả mọi ng🤗😋😎. Và cũng mong là năm mới mình trưởng thành hơn💪, bớt ham chơi hơn♦️♥️♣️♠️. Năm mới cái gì cũng mới... ❤️😍😘🌺🌹🌷</p>
+			<p class="width left magin color1" ><i class="fas fa-plus-square plus left i color" ></i><i class="fas fa-minus-square minus left i color"></i><span class="span"> Áo gymshark</span></p>
+		<p class="content magin color1">Có ai còn nhớ em Áo gymshark phối này không nhỉ ???
+
+			Hàng về như một cơn merr shop nhập thêm sll nha ae ❤
+
+			Chất áo miễn chê lun nha!!! .</p>
+		<p class="width left magin color1" ><i class="fas fa-plus-square plus left i color" ></i><i class="fas fa-minus-square minus left i color"></i><span class="span">Đồng Hồ Nam T.O.P</span></p>
+		<p class="content magin color1">Đồng Hồ Nam T.O.P
+					ĐưĐợc Đtài ĐtrợĐĐĐ · 
+					TẦM NÀY THÌ GIÁ CAO THÌ KHÔNG AI MUA 
+					SIÊU RẺ CHO 50 BẠN ĐẦU TIỀN 
+					TẶNG QUÀ CHO 50 BẠN</p>
+		<p class="width left magin color1" ><i class="fas fa-plus-square plus left i color" ></i><i class="fas fa-minus-square minus left i color"></i><span class="span">Ghiền Phim Hoa Ngữ</span></p>
+		<p class="content magin color1">Có ai còn nhớ em Áo gymshark phối này không nhỉ ???
+
+			Hàng về như một cơn merr shop nhập thêm sll nha ae ❤
+
+			Chất áo miễn chê lun nha!!! .</p>
+		</div>
+
+	<script type="text/javascript">
+			$(function(){
+				$('.plus').click(function(){
+					$(this).css('display','none');
+					$(this).parent().next().css("color",'yellow');
+
+					$(this).parent().next().show(500);
+					$(this).next().css('display','block');
+					$(this).next().next().css('color','#9ce41e');
+
+				});
+				$('.minus').click(function(){
+					$(this).prev().css('display','block');
+					$(this).css('display','none');
+					$(this).parent().next().hide(500);
+					$(this).next().css('color','#fff');
+
+
+				});
+
+			});
+		</script>
+</body>
+</html>
