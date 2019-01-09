@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+
+</head>
+<body>
+	
+	ho va ten:<input id="fullname" class="full" type="text" name="" value="">
+			<input id="" type="button" name="" value="nhan click " onclick="nhan()">
+			<span class="span1"></span>
+	<script type="text/javascript">
+		function nhan() {
+			var id= document.getElementsByClassName("full");
+			id[0].value="nguyen phu quy";
+			var content1=document.getElementsByClassName("span1");
+			content1[0].innerHTML="nguyen phu quy";
+			content1[0].style.color="red";
+			content1[0].style.border="1px solid red";
+			content1[0].style.fontSize="20px";
+		}
+	</script>
+</body>
+</html>

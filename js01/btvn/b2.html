@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.dk{
+			width: 50%;
+			margin: 40px auto;
+			height: 350px;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+		input{
+			margin-left: 150px;
+		}
+		.email1{
+			margin-left: 135px;
+
+		}
+		.pass{
+			margin-left: 110px;
+
+		}
+		.cpass{
+			margin-left: 85px;
+
+		}
+		.nu{
+			margin-left: 20px
+		}
+		span  {
+				color: #fff;
+			line-height: 55px;
+			margin-left: 10px;
+		}
+		.the{
+			width: 40%;
+		}
+		.tb{
+			color: red !important;
+		}
+
+		.sdt{
+			margin-left: 124px;
+		}
+		.dkk{
+			margin-left: 30%;
+			width: 50%;
+		}
+
+
+	</style>
+</head>
+<body  background="images.jfif">
+	<div class="dk">
+
+		<span>họ và tên:</span><input class="name1 the" type="text" name="" placeholder="Nhập họ và tên..."><span class="tb1 tb"></span><br>
+		<span>Giới tính:</span>	<input type="radio" name="">Nam
+		<input class="nu" type="radio" name="">Nữ<br>
+		<span>Nhập email:</span><input class="email1 the" type="email" name="" placeholder="Nhập email..."><span class="tb2 tb"></span><br>
+		<span>Số điện thoại:</span><input class="sdt the" type="text" name="" placeholder="Nhập số điện thoại..."><span class="tb5 tb"></span><br>
+
+		<span>Nhập password:</span><input class="pass the" type="password" name=""><span class="tb3 tb"></span><br>
+		<span>Xác nhận password:</span><input class="cpass the" type="password" name=""><span class="tb4 tb"></span><br>
+	</div>
+	<div class="dkk">
+		<input class="dky" type="button" name="" value="Đăng ký">
+		<input class="xoa" type="button" name="" value="Xoá trắng">
+
+	</div>
+	<script type="text/javascript">
+		var dkyy=document.getElementsByClassName('dky')[0];
+		dkyy.addEventListener('click', function(){
+			alert('Đăng ký thành công')
+		});
+		var xoaa=document.getElementsByClassName('xoa')[0];
+		dkyy.addEventListener('click', function(){
+			for (var i =0; i <the.length; i++) {
+				document.getElementsByClassName('the')[0].innerHTML='';
+			}
+			
+		});
+		var ten=document.getElementsByClassName('name1')[0];
+		ten.addEventListener('blur',function(){
+			if (ten.value.trim()=='') {
+				document.getElementsByClassName('tb1')[0].innerHTML="moi pan nhap ten";
+			}else if(ten.value.length<4){
+				document.getElementsByClassName('tb1')[0].innerHTML="nhap tren 4 ky tu ";
+			}
+			else{
+				document.getElementsByClassName('tb1')[0].innerHTML="Tuyệt vời";
+			}
+		});
+		
+		var p=document.getElementsByClassName('pass')[0];
+		p.addEventListener('blur',function(){
+
+			if (p.value.trim()=='') {
+				document.getElementsByClassName('tb3')[0].innerHTML="moi pan nhap password";
+			}else if(p.value.length<8){
+				document.getElementsByClassName('tb3')[0].innerHTML="nhap tren 8 ky tu ";
+			}
+			else{
+				document.getElementsByClassName('tb3')[0].innerHTML="Làm tốt lắm con trai";
+			}
+		});
+		var cp=document.getElementsByClassName('cpass')[0];
+		cp.addEventListener('blur',function(){
+
+			if (cp.value.trim()=='') {
+				document.getElementsByClassName('tb4')[0].innerHTML="Mời bạn nhập password";
+			}else if(cp.value.length<8){
+				document.getElementsByClassName('tb4')[0].innerHTML="NHập 8 ký tự trở lơn";
+			}
+			else{
+				document.getElementsByClassName('tb4')[0].innerHTML="Quá hay luôn";
+			}
+		});
+		function validateEmail(email) {
+			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return re.test(email);
+		}
+		var check1=document.getElementsByClassName('email1')[0];
+		check1.addEventListener('blur',function(){
+			if (check1.value.trim()=='') {
+				document.getElementsByClassName('tb2')[0].innerHTML="Mời bạn nhập email";
+			}else if(validateEmail(check1.value)==true){
+			document.getElementsByClassName('tb2')[0].innerHTML='Nhập thành công';
+		}else if (validateEmail(check1.value)==false) {
+			document.getElementsByClassName('tb2')[0].innerHTML='Sai cú pháp';
+
+		}
+		else {
+			document.getElementsByClassName('tb2')[0].innerHTML='Khá Bảnh';
+			
+			
+		}
+	});
+		var so=document.getElementsByClassName('sdt')[0];
+		so.addEventListener('blur',function(){
+			if (so.value.trim()=='') {
+				document.getElementsByClassName('tb5')[0].innerHTML="Mời bạn nhập số đt";
+			}else if(so.value.length<9){
+				document.getElementsByClassName('tb5')[0].innerHTML="Nhập đủ 10 chữ số ";
+			}
+			else{
+				document.getElementsByClassName('tb5')[0].innerHTML="Hay lắm";
+			}
+		});
+		
+	</script>
+</body>
+</html>

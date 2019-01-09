@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+	<div style="border: 1px solid black">
+		<input class="name" type="text" name=""><span class="tb1"></span><br>
+		<input class="email" type="email" name=""><span class="tb2"></span><br>
+		<input class="password" type="password" name=""><span class="tb3"></span><br>
+		<input class="cpassword" type="password" name=""><span class="tb4"></span><br>
+
+	</div>
+	<script type="text/javascript">
+		var n=document.getElementsByClassName('name')[0];
+		n.addEventListener('blur', function(){
+			if (n.value.trim()='') {
+				document.getElementsByClassName('tb1')[0].innerHTML='moi nhap';
+
+			}else{
+				document.getElementsByClassName('tb1')[0].innerHTML='nhap thanh cong';
+			}
+		});
+		var p=document.getElementsByClassName('password')[0];
+		p.addEventListener('blur', function(){
+			if (p.value.trim()='') {
+				document.getElementsByClassName('tb3')[0].innerHTML='moi nhap';
+
+			}else if (p.value.length < 8 ){
+				document.getElementsByClassName('tb3')[0].innerHTML='yeu cau nhap tren 8ky tu';
+			}
+			else {
+				document.getElementsByClassName('tb3')[0].innerHTML='';
+				
+			}
+		});
+	var cp=document.getElementsByClassName('cpassword')[0];
+		cp.addEventListener('blur', function(){
+			if (p.value.trim()='') {
+				document.getElementsByClassName('tb4')[0].innerHTML='moi nhap';
+
+			}
+			else if (cp.value==p.value) {
+				document.getElementsByClassName('tb4')[0].innerHTML='nhap thanh cong';
+			}else{
+				document.getElementsByClassName('tb4')[0].innerHTML='sai password';
+
+			}
+				
+			
+
+		});
+
+	</script>
+</body>
+</html>

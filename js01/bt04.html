@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	li{
+		list-style: none;
+		float: left;
+		margin:10px 10px 0 0;
+	    width: 98px;
+	    height: 25px;
+	    text-align: center;
+	    background-color: blue;
+    	line-height: 30px;
+    	font-size: 20px;
+	}
+		#content1 {
+			display: block;
+		}
+		#content2 {
+			display: none;
+		}
+		#content3 {
+			display: none;
+		}
+		.content{
+			width: 50%;
+			margin: 0 auto;
+		}
+		h2{
+			margin: 0px;
+		}
+		.hieght{
+			height:100px;
+		}
+	</style>
+	<script type="text/javascript">
+		function tab1(x){
+			document.getElementById("content1").style.display =  "block";
+			
+			document.getElementById("content2").style.display = "none";
+			document.getElementById("content3").style.display =  "none";
+			document.getElementById('mau2').style.background='blue';
+			document.getElementById('mau3').style.background='blue';
+			document.getElementById('mau1').style.background = '#fff';
+
+		}
+			function tab2(x){
+			document.getElementById("content1").style.display =  "none";
+			document.getElementById("content2").style.display ="block";
+			document.getElementById("content3").style.display =  "none";
+			document.getElementById('mau2').style.background='#fff';
+			document.getElementById('mau3').style.background='blue';
+			document.getElementById('mau1').style.background = 'blue';
+		}
+			function tab3(x){
+			document.getElementById("content1").style.display = "none";
+			document.getElementById("content2").style.display =  "none";
+			document.getElementById("content3").style.display = "block";
+			document.getElementById('mau2').style.background='blue';
+			document.getElementById('mau3').style.background='#fff';
+			document.getElementById('mau1').style.background = 'blue';
+		}
+	</script>
+</head>
+<body  style="background-color: #a39b91">
+	<div class="content" style="background-color: #a39b91">
+		<div style="width: 100%; height: 30px;">
+		<ul>
+			<li id="mau1" onclick="tab1(this)" style="background-color: #fff">tab1</li>
+			<li id="mau2" onclick="tab2(this)">tab2</li>
+			<li id="mau3" onclick="tab3(this)">tab3</li>
+		</ul>
+		</div>
+		<div></div> style="background-color: #fff;">
+			<div id="content1" class="hieght">
+				<h2 style=" margin: 5px;">tabl1</h2>
+				<p style=" margin: 5px;">Mưa hay nước mắt em đang rơi ướt đẫm hàng mi Sao đôi mắt không chịu nhắm lại chìm vào giấc ngủ mơ màng đi.</p>
+			</div>
+			<div id="content2"class="hieght">
+				<h2 style=" margin: 5px;">tabl2</h2>
+				<p style=" margin: 5px;">Mưa hay nước mắt em đang rơi ướt đẫm hàng mi Sao đôi mắt không chịu nhắm lại chìm vào giấc ngủ mơ màng đi.</p>
+			</div>
+			<div id="content3"class="hieght">
+				<h2 style=" margin: 5px;">tabl3</h2>
+				<p style=" margin: 5px;">Mưa hay nước mắt em đang rơi ướt đẫm hàng mi Sao đôi mắt không chịu nhắm lại chìm vào giấc ngủ mơ màng đi.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

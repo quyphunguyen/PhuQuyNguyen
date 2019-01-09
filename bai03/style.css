@@ -1,0 +1,43 @@
+.dk{
+			width: 50%;
+			margin: 40px auto;
+			height: 350px;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+		input{
+			margin-left: 150px;
+		}
+		.email1{
+			margin-left: 135px;
+
+		}
+		.pass{
+			margin-left: 110px;
+
+		}
+		.cpass{
+			margin-left: 85px;
+
+		}
+		.nu{
+			margin-left: 20px
+		}
+		span  {
+				
+			line-height: 55px;
+			margin-left: 10px;
+		}
+		.the{
+			width: 40%;
+		}
+		.tb{
+			color: red;
+		}
+		.sdt{
+			margin-left: 124px;
+		}
+		.dkk{
+			margin-left: 30%;
+			width: 50%;
+		}

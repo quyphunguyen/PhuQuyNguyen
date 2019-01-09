@@ -1,0 +1,47 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img  src="../bai04/6 (1).jpg " onmouseover="tang()" onmouseout="giam()">
+	<input type="button" name="" value="tang" onclick="tang()">
+	<input type="button" name="" value="giam" onclick="giam()">
+	<input id="id" type="text" name="" placeholder="" onfocus="vao()" onblur="ra()">
+	<script type="text/javascript">
+		var vao1=document.getElementById("id");
+		vao1=addEventListener("focus",vao);
+		var ra1=document.getElementByTagId("id");
+		ra1=addEventListener("blur",ra);
+		function vao(){
+
+			var id=document.getElementById("id");
+			id.style.background ="yellow";
+			id.style.color='red';
+		}
+		function ra(){
+			var id=document.getElementById("id");
+			id.style.background ="#fff";
+		}
+		function tang(){
+			var img=document.getElementsByTagName("img")[0];
+			var width=img.width;
+			var height=img.height;
+			img.width=width*1.2;
+			img.height=height*1.2;
+			img.style.opacity="0.5";
+		}
+		function giam(){
+			var img=document.getElementsByTagName("img")[0];
+			var width=img.width;
+			var height=img.height;
+			img.width=width/1.2;
+			img.height=height/1.2;
+			img.style.opacity="1";
+
+		}
+	</script>
+
+</body>
+</html>

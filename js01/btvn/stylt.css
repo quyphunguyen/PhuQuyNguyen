@@ -1,0 +1,21 @@
+.anh{
+	width: 50%;
+	margin: 0 auto;
+	height: 400px;
+	position: relative;
+}
+img{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+}
+a{
+	position: absolute;
+	line-height: 400px;
+}
+#next1{
+ margin-left: 92%;
+}
+.chay{
+z-index: 1;
+}

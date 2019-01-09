@@ -7,9 +7,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<script type="text/javascript">
 		$(function(){
-	        $('#add').click( function(){
-	                var Add = $('.listname').val();
-	                 $('ol').append('<li>' + Add + ' <i class="fas fa-times delete"></i></li>');
+	        $('#ad').click( function(){
+	                var add = $('.text').val();
+	                 $('ol').append('<li>' + add + ' <i class="fas fa-times delete"></i></li>');
 	        });
 
 		   
@@ -54,7 +54,7 @@
 				width: 450px;				
 				}
 
-				#add{
+				#ad{
 				display: inline-block;
 				background-color:red;
 				color:#01DF01;
@@ -65,7 +65,7 @@
 
 				}
 
-				#add:hover{
+				#ad:hover{
 				cursor: pointer;
 				opacity: 1;}
 
@@ -99,10 +99,10 @@
    		<h3>thịnh vượng, sức khỏe dồi rào😍- hạnh phúc😘</h3>
        
 		<form class="form">
-			<input type="text" name="ListItem" class="text" placeholder="">
+			<input type="text" name="ListItem" class="text" placeholder="Thêm...">
 		</form>
     
-		<div id="add">Add</div>
+		<div id="ad">add</div>
 		<br/>
 		<ol></ol>
 	</div>

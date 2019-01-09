@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>\
+	<style type="text/css">
+		.max{
+			width: 60%;
+			margin: 0 auto;
+			font-size:100%;
+		}
+		#id{
+	   			 border: 1px solid black;
+	   			 padding: 10px;
+		}
+		input{
+			margin: 5px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="max">
+	<div id="id">
+		<h4>cỡ chữ</h4>
+		<input type="button" name="" value="Mặc định" onclick="macdinh()">
+		<input type="button" name="" value="Tăng" onclick="tang()">
+		<input type="button" name="" value="Giảm" onclick="giam()">
+		
+	</div>
+	<p id="p">Khi người dùng nhấp chuột vào nút Lớn hoặc Nhỏ sẽ tăng hoặc giảm cỡ chữ trên hình vẽ. Cuối cùng họ cũng có thể nhấn vào nút Mặc Định để trả cỡ chữ về giá trị ban đầu. Chúng ta sẽ cho phép người dùng nhấp chuột nhiều lần vào nút, và mỗi lần nhấp cỡ chữ sẽ tăng hoặc giảm dần lên. Ta sẽ cho tăng cỡ chữ lên 40% mỗi khi người dùng nhấp chuột vào nút “Lớn” hoặc nhỏ đi 40% mỗi khi nhấp chuột vào nút “Nhỏ”.</p>
+	</div>
+	<script type="text/javascript">
+		function macdinh(){
+			var auto=document.getElementsByTagName("p")[0];
+			auto.style.fontSize='100%';
+		}
+			function tang(){
+			var auto=document.getElementsByTagName("p")[0];
+			auto.style.fontSize='140%';
+		}
+			function giam(){
+			var auto=document.getElementsByTagName("p")[0];
+			auto.style.fontSize='80%';
+		}
+	</script>
+</body>
+</html>

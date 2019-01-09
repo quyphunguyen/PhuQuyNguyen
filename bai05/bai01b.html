@@ -2,19 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Hình_1b</title>
+	<title>Hình_1a</title>
 	<script type="text/javascript">
-		var n;
-		n=parseInt(prompt("Nhập số N:"));
+		function h1() {
+			var n;
+		do{
+			n=parseInt(prompt("Nhập n"));
+		}while(n<=0);
+		for (var i = 1; i <=n; i++) {
+			for (var j=1; j<=i; j++) {
+				document.write(" * ");
+				
+			}document.write("<br>");
+		}
+		}
+		
+		function h2() {
+			var n;
+		do{
+			n=parseInt(prompt("Nhập n"));
+		}while(n<=0);
 		for (var i = 1; i <=n; i++) {
 			for (var j=1; j<=n; j++) {
 				document.write(" * ");
 				
 			}document.write("<br>");
 		}
+		}
+		function h3() {
+		var n;
+		n=parseInt(prompt("Nhập N:"));
+		for (var i = 1; i <=n; i++) {
+			for (var j=n;j>=i; j--) {
+				document.write(" * ");
+				
+			}document.write("<br>");
+		}
+		}
+		function h4() {
+		var n;
+		do{
+			n=parseInt(prompt("Nhập n"));
+		}while(n<=0);
+		for (var i = 1; i <=n; i++) {	
+			for (var j=1; j<=n; j++) {
+				if (i==1||i==n||j==1||j==n) {
+					document.write(" *");
+				}else{
+					document.write("&nbsp&nbsp&nbsp");
+				}
+				
+			}document.write("<br>");
+		}
+		}
 	</script>
 </head>
 <body>
+	<button onclick="h1()">Hình 1</button>
+	<button onclick="h2()">Hình 2</button>
+	<button onclick="h3()">Hình 3</button>
+	<button onclick="h4()">Hình 4</button>
 	
 </body>
 </html>

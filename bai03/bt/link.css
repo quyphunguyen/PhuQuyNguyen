@@ -1,0 +1,21 @@
+ul{
+	list-style: none;
+}
+li{
+	margin: 10px`
+}
+.ul1 li{
+	float: left;
+}
+.ul2 li{
+	float: right;
+}
+.top{
+	width: 100%;
+	height: 50px;
+	background: red
+}
+.top1{
+	width: 80%;
+	margin: 0 auto;
+}

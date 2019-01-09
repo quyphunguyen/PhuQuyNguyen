@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		li{
+			list-style: none;
+			border: 1px solid black;
+			height: 20px;	
+
+		}
+		div{
+			width: 40%; 
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)" >
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<li class="mau1" onmousemove="mau(this)" onmouseout="outmau(this)">
+				<input class="check" type="checkbox" name=""><span>Dùng cho nhiều lựa chọn khác nhau</span>
+			</li>
+			<input type="button" name="" value="checklall" onclick="checklall()">
+			<input type="button" name="" value="checklalltext" onclick="checklalltext()">
+
+		</ul>
+	</div>
+	\<script type="text/javascript">
+		function mau(x){
+			x.style.background = 'red';
+		}
+		function outmau(x){
+			x.style.background = '#fff';
+		}
+
+		function checklall(){
+			for (var i = 0; i< document.getElementsByTagName('input').length; i++) {
+				document.getElementsByTagName('input')[i].checked=true;
+			}
+		}
+		function checklalltext(){
+			for (var i = 0; i< document.getElementsByTagName('input').length; i++) {
+				document.getElementsByTagName('input')[i].checked=false;
+			}
+		}
+	</script>
+</body>
+</html>
