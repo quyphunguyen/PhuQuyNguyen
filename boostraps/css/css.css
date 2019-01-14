@@ -1,0 +1,91 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+.container-fluid{
+	padding:0;
+}
+.menu{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+.bgimg{
+	background-image: url(../images/123.jpg);
+	background-size: 100%;
+	height: 500px;
+}
+.center{
+	text-align: center;
+}
+.jumbotron1{
+	width: 50%;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.card3{
+	width: 90%;
+	margin: 0 auto;
+}
+.bgimg2{
+	background-image: url(../images/bg-section-facts.jpg);
+	color: #fff;s
+	height: 200px;
+}
+.thei{
+	font-size: 59px;
+	line-height: 126px;
+}
+.thei:hover{
+	color: #FF4000;
+}
+.thei2{
+
+	font-size: 50px;
+	    line-height: 74px;
+    background: red;
+    border-radius: 50px;
+    text-align: center;
+    width: 74px;
+
+}
+.height-navbar{
+	line-height: 70px;
+	background-color: yellow;	
+}
+.border{
+	border: 0px;
+}
+.margin-card{
+	margin-top:50px;
+}
+.card-img{
+	height: 60px;
+	border-radius: 40px;   
+	text-align: center;
+	  margin: -21px 39% 50px;
+}
+.card-p{
+	text-align: center;width: 95% ;margin: 0 auto
+}
+.card-li{
+	font-size: 12px
+}
+.margin{
+	margin: 0 auto;
+}
+.paddding{
+	padding: 0px;
+}
+.the-i-bootom{
+	    font-size: 23px;
+    color: #fff;
+    background: red;
+    border-radius: 46px;
+   
+    border: 1px solid yellow;
+    padding-top: 0px;
+    line-height: 29px
+}
