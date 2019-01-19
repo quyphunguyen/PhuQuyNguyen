@@ -4,12 +4,65 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script type="text/javascript" src="../bootstraps/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		@keyframes example {
+    10% {
+        margin-top: 0px;
+    }
+    40% {
+        margin-top: -55px;
+    }
+    60% {
+        margin-top: -110px;
+    }
+    80% {
+        margin-top: -165px;
+    }
+    100% {
+        margin-top: 0px;
+    }   
+}
+.slide .content {
+    height: 50px;
+    overflow: hidden;
+}
+
+.slide .content .content-box {
+    height: auto;
+}
+
+.slide .content .content-box {
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+	</style>
 </head>
 <body>
-	<div>
-		<div>
-			div
-		</div>
-	</div>
+	<div class="slide container-fluid my-auto text-center">
+        <div class="jumbotron text-center">
+            <div class="design my-auto">
+                <div class="content">
+                    <div class="content-box">
+                        <h1 class="display-6">WE ARE BUILDERS.</h1>
+                        <h1 class="display-6">DESIGN &amp; BUILD.</h1>
+                        <h1 class="display-6">BUILDING IS OUR PASSION.</h1>
+                        <h1 class="display-6">WE ARE CONSTRUCTION.</h1>
+                    </div>
+                </div>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button">OUR FOLIO <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="spinner-border text-warning" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <img src="img/slide-01.jpg" alt="">
+        <!--
+        <img src="img/slide-02.jpg" alt="">
+        <img src="img/slide-03.jpg" alt="">
+-->
+    </div>
 </body>
 </html>

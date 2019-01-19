@@ -1,13 +1,14 @@
 $(document).ready(function(){
-  $(".nav a").click(function(){
-    $(this).tab('show');
-  });
+	$(".nav a").click(function(){
+		$(this).tab('show');
+	});
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
 
-  $(".about").click(function () {
-			// $('.about').animate({
-				// $('#next').show(1000);
-			// })
-			// $('#next').css("top","0px");
-		})
+
+
+	
 
 });

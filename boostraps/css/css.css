@@ -25,17 +25,25 @@
 .left{
 	float: left;
 }
+.ringht{
+	float: right;
+}
 .card3{
 	width: 90%;
 	margin: 0 auto;
 }
 .bgimg2{
 	background-image: url(../images/bg-section-facts.jpg);
-	color: #fff;s
-	height: 200px;
+	color: #fff;
+	
+	background-size: 100%;
+}
+.bgimg2 span{
+	color: yellow;
+	font-size: 30px;
 }
 .thei{
-	font-size: 59px;
+	font-size: 40px;
 	line-height: 126px;
 }
 .thei:hover{
@@ -45,16 +53,17 @@
 
 	font-size: 50px;
 	    line-height: 74px;
-    background: red;
+    background: #7eed10;
     border-radius: 50px;
     text-align: center;
     width: 74px;
 
 }
-.height-navbar{
-	line-height: 70px;
-	background-color: yellow;	
+.thei2:hover{
+	color: yellow;
+
 }
+
 .border{
 	border: 0px;
 }
@@ -80,12 +89,91 @@
 	padding: 0px;
 }
 .the-i-bootom{
-	    font-size: 23px;
+	    font-size: 48px;
     color: #fff;
     background: red;
-    border-radius: 46px;
+    border-radius: 48px;
    
-    border: 1px solid yellow;
+    border: 1px solid red;
     padding-top: 0px;
-    line-height: 29px
+    line-height: 48px
+}
+.li{
+	list-style: none;
+
+}
+.the-p-bootom{
+	line-height: 100px;
+	color: #685757
+}
+.trang{
+	color: #fff;
+
+}
+
+.lead:hover{
+		color: red;
+}
+.b:hover .thei2{
+	color: red;
+}
+@keyframes example {
+    10% {
+        margin-top: 0px;
+    }
+    40% {
+        margin-top: -55px;
+    }
+    60% {
+        margin-top: -110px;
+    }
+    80% {
+        margin-top: -165px;
+    }
+    100% {
+        margin-top: 0px;
+    }   
+}
+.slide .content {
+    height: 50px;
+    overflow: hidden;
+}
+
+.slide .content .content-box {
+    height: auto;
+}
+
+.slide .content .content-box {
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@media(max-width: 770px){
+	.nonedt{
+		display: none;
+	}
+	.margindt{
+		margin: 0 auto
+	}
+}
+
+@media(min-width: 771px) and ( max-width: 1200px){
+	.nonetab{
+		display: none;
+	}
+	.righttab{
+		float: right;
+	}
+	.lefttab{
+		float: left;
+	}
+}
+@media(min-width: 1201px){
+	.rightxl{
+		float: right;
+	}
+}
+p:hover{
+	color: red;
 }
