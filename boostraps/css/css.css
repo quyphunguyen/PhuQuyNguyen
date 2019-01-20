@@ -156,6 +156,9 @@
 	.margindt{
 		margin: 0 auto
 	}
+	.margin-top{
+		margin-top: 25px
+	}
 }
 
 @media(min-width: 771px) and ( max-width: 1200px){
@@ -176,4 +179,7 @@
 }
 p:hover{
 	color: red;
+}
+span:hover{
+	color: #17f707;
 }
